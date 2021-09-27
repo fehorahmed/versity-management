@@ -39,6 +39,7 @@ class AdminController extends Controller
                 $request->session()->put("Admin_name",$result->name);
                 $request->session()->put("Admin_email",$result->email);
                 $request->session()->put("Admin_phone",$result->phone);
+                $request->session()->put("Admin_address",$result->address);
                 return redirect('/dashboard');
             }else{
                 Session::flash('message','Incorrect password!');
@@ -56,7 +57,12 @@ class AdminController extends Controller
         session()->forget('Admin_name');
         session()->forget('Admin_email');
         session()->forget('Admin_phone');
+        session()->forget('Admin_address');
         return redirect()->route('admin.index');
+    }
+
+    public function show(){
+        return view('admin.admin_profile');
     }
 
    

@@ -40,7 +40,7 @@
                                 </p>
                             </div>
 
-                            <form action="{{route('admin.auth')}}" method='post'>
+                            <form action="{{route('admin.auth')}}" method='get'>
                                 @csrf
                                 <div class="mb-3">
                                     <label for="emailaddress" class="form-label">Email address</label>

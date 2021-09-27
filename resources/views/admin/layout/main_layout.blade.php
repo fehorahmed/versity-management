@@ -10,20 +10,20 @@
         <!-- LOGO -->
         <a href="index.html" class="logo text-center logo-light">
             <span class="logo-lg">
-                <img src="assets/images/logo.png" alt="" height="16">
+                <img src="{{asset('assets/images/logo.png')}}" alt="" height="16">
             </span>
             <span class="logo-sm">
-                <img src="assets/images/logo_sm.png" alt="" height="16">
+                <img src="{{asset('assets/images/logo_sm.png')}}" alt="" height="16">
             </span>
         </a>
 
         <!-- LOGO -->
         <a href="index.html" class="logo text-center logo-dark">
             <span class="logo-lg">
-                <img src="assets/images/logo-dark.png" alt="" height="16">
+                <img src="{{asset('assets/images/logo-dark.png')}}" alt="" height="16">
             </span>
             <span class="logo-sm">
-                <img src="assets/images/logo_sm_dark.png" alt="" height="16">
+                <img src="{{asset('assets/images/logo_sm_dark.png')}}" alt="" height="16">
             </span>
         </a>
 
@@ -149,7 +149,7 @@
                                 <!-- item-->
                                 <a href="javascript:void(0);" class="dropdown-item notify-item">
                                     <div class="notify-icon">
-                                        <img src="assets/images/users/avatar-2.jpg" class="img-fluid rounded-circle"
+                                        <img src="{{asset('assets/images/users/avatar-2.jpg')}}" class="img-fluid rounded-circle"
                                             alt="">
                                     </div>
                                     <p class="notify-details">Cristina Pride</p>
@@ -171,7 +171,7 @@
                                 <!-- item-->
                                 <a href="javascript:void(0);" class="dropdown-item notify-item">
                                     <div class="notify-icon">
-                                        <img src="assets/images/users/avatar-4.jpg" class="img-fluid rounded-circle"
+                                        <img src="{{asset('assets/images/users/avatar-4.jpg')}}" class="img-fluid rounded-circle"
                                             alt="">
                                     </div>
                                     <p class="notify-details">Karen Robinson</p>
@@ -212,19 +212,19 @@
                                 <div class="row g-0">
                                     <div class="col">
                                         <a class="dropdown-icon-item" href="#">
-                                            <img src="assets/images/brands/slack.png" alt="slack">
+                                            <img src="{{asset('assets/images/brands/slack.png')}}" alt="slack">
                                             <span>Slack</span>
                                         </a>
                                     </div>
                                     <div class="col">
                                         <a class="dropdown-icon-item" href="#">
-                                            <img src="assets/images/brands/github.png" alt="Github">
+                                            <img src="{{asset('assets/images/brands/github.png')}}" alt="Github">
                                             <span>GitHub</span>
                                         </a>
                                     </div>
                                     <div class="col">
                                         <a class="dropdown-icon-item" href="#">
-                                            <img src="assets/images/brands/dribbble.png" alt="dribbble">
+                                            <img src="{{asset('assets/images/brands/dribbble.png')}}" alt="dribbble">
                                             <span>Dribbble</span>
                                         </a>
                                     </div>
@@ -233,19 +233,19 @@
                                 <div class="row g-0">
                                     <div class="col">
                                         <a class="dropdown-icon-item" href="#">
-                                            <img src="assets/images/brands/bitbucket.png" alt="bitbucket">
+                                            <img src="{{asset('assets/images/brands/bitbucket.png')}}" alt="bitbucket">
                                             <span>Bitbucket</span>
                                         </a>
                                     </div>
                                     <div class="col">
                                         <a class="dropdown-icon-item" href="#">
-                                            <img src="assets/images/brands/dropbox.png" alt="dropbox">
+                                            <img src="{{asset('assets/images/brands/dropbox.png')}}" alt="dropbox">
                                             <span>Dropbox</span>
                                         </a>
                                     </div>
                                     <div class="col">
                                         <a class="dropdown-icon-item" href="#">
-                                            <img src="assets/images/brands/g-suite.png" alt="G Suite">
+                                            <img src="{{asset('assets/images/brands/g-suite.png')}}" alt="G Suite">
                                             <span>G Suite</span>
                                         </a>
                                     </div>
@@ -265,7 +265,7 @@
                         <a class="nav-link dropdown-toggle nav-user arrow-none me-0" data-bs-toggle="dropdown" href="#"
                             role="button" aria-haspopup="false" aria-expanded="false">
                             <span class="account-user-avatar">
-                                <img src="assets/images/users/avatar-1.jpg" alt="user-image" class="rounded-circle">
+                                <img src="{{asset('assets/images/users/avatar-1.jpg')}}" alt="user-image" class="rounded-circle'">
                             </span>
                             <span>
                                 <span class="account-user-name">{{session()->get('Admin_name')}}</span>
@@ -280,7 +280,7 @@
                             </div>
 
                             <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <a href="{{route('admin.show')}}" class="dropdown-item notify-item">
                                 <i class="mdi mdi-account-circle me-1"></i>
                                 <span>My Account</span>
                             </a>
@@ -326,7 +326,7 @@
                         </a>
 
                         <!-- item-->
-                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                        <a href="" class="dropdown-item notify-item">
                             <i class="uil-cog font-16 me-1"></i>
                             <span>User profile settings</span>
                         </a>
@@ -340,7 +340,7 @@
                             <!-- item-->
                             <a href="javascript:void(0);" class="dropdown-item notify-item">
                                 <div class="d-flex">
-                                    <img class="d-flex me-2 rounded-circle" src="assets/images/users/avatar-2.jpg"
+                                    <img class="d-flex me-2 rounded-circle" src="{{asset('assets/images/users/avatar-2.jpg')}}"
                                         alt="Generic placeholder image" height="32">
                                     <div class="w-100">
                                         <h5 class="m-0 font-14">Erwin Brown</h5>
@@ -352,7 +352,7 @@
                             <!-- item-->
                             <a href="javascript:void(0);" class="dropdown-item notify-item">
                                 <div class="d-flex">
-                                    <img class="d-flex me-2 rounded-circle" src="assets/images/users/avatar-5.jpg"
+                                    <img class="d-flex me-2 rounded-circle" src="{{asset('assets/images/users/avatar-5.jpg')}}"
                                         alt="Generic placeholder image" height="32">
                                     <div class="w-100">
                                         <h5 class="m-0 font-14">Jacob Deo</h5>

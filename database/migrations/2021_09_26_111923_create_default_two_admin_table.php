@@ -19,14 +19,14 @@ class CreateDefaultTwoAdminTable extends Migration
                 [
                     'name' => 'Masudur Rahman',
                     'email' => 'masud@gmail.com',
-                    'password' => Hash::make(12345678),
+                    'password' => Hash::make(12345),
                     'phone' => '017066376079',
                     'address'=>" Gaibandha",
                 ],
                 [
                     'name' => 'Fehor',
                     'email' => 'fehor@gmail.com',
-                    'password' => Hash::make(12345678),
+                    'password' => Hash::make(12345),
                     'phone' => '01155698574',
                     'address'=>"Bogura",
                 ],
